@@ -46,9 +46,7 @@ struct openListNode{
 };
 
 class Graph{
-    vector< vector< pair<int, int> > > grp; // pair contains the 2nd node and its cost
-                                            // cost to reach the 2nd node from 1st node
-                                            // ist node pointed by outter vector
+    vector< vector< pair<int, int> > > grp;
     vector<int> hueristic;
     int nodes;
     int edges;
