@@ -210,7 +210,7 @@ int main(){
     int startNode = 0, goalNode = 0;
     cout<<"Enter start and goal node: ";
     cin>>startNode>>goalNode; 
-    int ans = g1.AStarPath(startNode, goalNode);
+    int ans = g1.AStar(startNode, goalNode);
 
     if(ans != -1){
         cout<<"Minimum cost: "<<ans;
@@ -221,3 +221,30 @@ int main(){
     
     return 0;
 }
+
+/*
+
+OUTPUT:
+
+Enter nodes and edges: 6 8
+Is graph directed: (y/n ?)y
+enter src des ('0 indexed') cost: 0 1 1
+enter src des ('0 indexed') cost: 1 2 2
+enter src des ('0 indexed') cost: 1 3 1
+enter src des ('0 indexed') cost: 0 5 10
+enter src des ('0 indexed') cost: 2 4 5
+enter src des ('0 indexed') cost: 3 4 3
+enter src des ('0 indexed') cost: 3 5 4
+enter src des ('0 indexed') cost: 4 5 2
+enter h(0): 5  
+enter h(1): 3
+enter h(2): 4
+enter h(3): 2
+enter h(4): 6
+enter h(5): 0
+
+Enter start and goal node: 0 5
+Minimum cost path: 0 -> 1 -> 3 -> 5
+Minimum cost: 6
+
+*/
