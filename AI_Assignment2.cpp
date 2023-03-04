@@ -122,7 +122,7 @@ int Graph :: AStar(int startNode, int goalNode){
 
 
     vector<openListNode> traversedNodeList; // stores all the nodes which are traversed 
-                                            // while searching for the minimum
+                                            // while searching for the minimum cost
 
     /*
         All openListNodes are tagged by ID
